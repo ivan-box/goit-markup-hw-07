@@ -18,11 +18,12 @@
 
   <!-- header \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
   <header class="item-header">
-    <div class="container wrapper">
+    <div class="container wrapper-flex">
       <a class="logo-header list" href="./index.html"><span class="accent-color">Web</span>Studio</a>
-      <nav class="wrapper">
-        <ul class="wrapper-nav list">
+      <nav class="wrapper-flex main-nav">
+        <ul class="main-nav__list list">
           <li>
+            <!-- main-nav__link -->
             <a class="navigation current" href="./index.html">Studio</a>
           </li>
           <li>
@@ -33,17 +34,18 @@
           </li>
         </ul>
       </nav>
-      <ul class="wrapper-contacts list">
+      <!--contacts  contacts-list  -->
+      <ul class="contacts-list list">
         <li>
-          <a class="reference contacts-links" href="mailto:info@devstudio.com">
-            <svg class="header-mail" width="16px" height="12px">
+          <a class="contacts-links" href="mailto:info@devstudio.com">
+            <svg class="contact-icon" width="16px" height="12px">
               <use href="./image/icons.svg#envelope">
               </use>
             </svg>info@devstudio.com</a>
         </li>
         <li>
-          <a class="reference contacts-links" href="tel:+38-096-111-11-11">
-            <svg class="header-tel" width="10px" height="16px">
+          <a class="contacts-links" href="tel:+38-096-111-11-11">
+            <svg class="contact-icon" width="10px" height="16px">
               <use href="./image/icons.svg#smartphone">
               </use>
             </svg>+38 096 111 11 11</a>
@@ -139,85 +141,83 @@
     <section class="section advantages">
       <div class="container">
         <h2 class="title-advantages visually-hidden">Our advantages</h2>
-        <div>
-          <ul class="list wrapper">
-            <li class="advantage">
-              <div class="wrapper-icon">
-                <svg class="advantage-icon" width="70px" height="70px">
-                  <use href="./image/icons.svg#antenna">
-                  </use>
-                </svg>
-              </div>
-              <h3 class="advantages-title">Attention to detail</h3>
-              <p class="advantages-text">
-                Ideological considerations, as well as the beginning of daily work
-                on the formation of a position.
-              </p>
-            </li>
-            <li class="advantage">
-              <div class="wrapper-icon">
-                <svg class="advantage-icon" width="70px" height="70px">
-                  <use href="./image/icons.svg#clock">
-                  </use>
-                </svg>
-              </div>
-              <h3 class="advantages-title">Punctuality</h3>
-              <p class="advantages-text">
-                The task of the organization, in particular the framework and
-                place of training of personnel entails.
-              </p>
-            </li>
-            <li class="advantage">
-              <div class="wrapper-icon">
-                <svg class="advantage-icon" width="70px" height="70px">
-                  <use href="./image/icons.svg#diagram">
-                  </use>
-                </svg>
-              </div>
-              <h3 class="advantages-title">Planning</h3>
-              <p class="advantages-text">
-                Similarly, consultation with a broad asset is largely conditional.
-              </p>
-            </li>
-            <li class="advantage">
-              <div class="wrapper-icon">
-                <svg class="advantage-icon" width="70px" height="70px">
-                  <use href="./image/icons.svg#astronaut">
-                  </use>
-                </svg>
-              </div>
-              <h3 class="advantages-title">Modern technologies</h3>
-              <p class="advantages-text">
-                The significance of these problems is so obvious that the
-                implementation of planned targets.
-              </p>
-            </li>
-          </ul>
-        </div>
+        <ul class="list wrapper-flex">
+          <li class="advantage">
+            <div class="wrapper-icon">
+              <svg class="advantage-icon" width="70px" height="70px">
+                <use href="./image/icons.svg#antenna">
+                </use>
+              </svg>
+            </div>
+            <h3 class="advantages-title">Attention to detail</h3>
+            <p class="advantages-text">
+              Ideological considerations, as well as the beginning of daily work
+              on the formation of a position.
+            </p>
+          </li>
+          <li class="advantage">
+            <div class="wrapper-icon">
+              <svg class="advantage-icon" width="70px" height="70px">
+                <use href="./image/icons.svg#clock">
+                </use>
+              </svg>
+            </div>
+            <h3 class="advantages-title">Punctuality</h3>
+            <p class="advantages-text">
+              The task of the organization, in particular the framework and
+              place of training of personnel entails.
+            </p>
+          </li>
+          <li class="advantage">
+            <div class="wrapper-icon">
+              <svg class="advantage-icon" width="70px" height="70px">
+                <use href="./image/icons.svg#diagram">
+                </use>
+              </svg>
+            </div>
+            <h3 class="advantages-title">Planning</h3>
+            <p class="advantages-text">
+              Similarly, consultation with a broad asset is largely conditional.
+            </p>
+          </li>
+          <li class="advantage">
+            <div class="wrapper-icon">
+              <svg class="advantage-icon" width="70px" height="70px">
+                <use href="./image/icons.svg#astronaut">
+                </use>
+              </svg>
+            </div>
+            <h3 class="advantages-title">Modern technologies</h3>
+            <p class="advantages-text">
+              The significance of these problems is so obvious that the
+              implementation of planned targets.
+            </p>
+          </li>
+        </ul>
       </div>
     </section>
 
     <!-- what we do \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\-->
 
-    <section class="section trade">
+    <section class="section">
       <div class="container">
         <h2 class="section-title">What are we doing</h2>
-        <div>
-          <ul class="list wrapper">
-            <li class="study">
-              <img class="trade-image" src="./image/make/box1.jpg" alt="workplace" />
-              <h3 class="trade-list">Desktop Applications</h3>
-            </li>
-            <li class="study">
-              <img class="trade-image" src="./image/make/box2.jpg" alt="user authorization" />
-              <h3 class="trade-list">Mobile Applications</h3>
-            </li>
-            <li class="study">
-              <img class="trade-image" src="./image/make/box3.jpg" alt="finished product" />
-              <h3 class="trade-list">Design solutions</h3>
-            </li>
-          </ul>
-        </div>
+
+        <ul class="craft-list list wrapper-flex">
+          <li class="craft-list__work">
+            <img class="craft-list__image" src="./image/make/box1.jpg" alt="workplace" />
+            <h3 class="craft-list__title">Desktop Applications</h3>
+          </li>
+          <li class="craft-list__work">
+            <img class="craft-list__image" src="./image/make/box2.jpg" alt="user authorization" />
+            <h3 class="craft-list__title">Mobile Applications</h3>
+          </li>
+          <li class="craft-list__work">
+            <img class="craft-list__image" src="./image/make/box3.jpg" alt="finished product" />
+            <h3 class="craft-list__title">Design solutions</h3>
+          </li>
+        </ul>
+
       </div>
     </section>
 
@@ -226,12 +226,12 @@
     <section class="section team">
       <div class="container">
         <h2 class="section-title">Our team</h2>
-        <ul class="list wrapper">
-          <li class="card">
+        <ul class="team__list list wrapper-flex">
+          <li class="team__list-card">
             <img src="./image/team/img.jpg" alt="photo" width="270" />
-            <div class="team-card">
-              <h3 class="team-member">Igor Demyanenko</h3>
-              <p class="team-position">Product Designer</p>
+            <div class="team__list-member">
+              <h3 class="team__list-title">Igor Demyanenko</h3>
+              <p class="team__list-position">Product Designer</p>
               <ul class="social-network-icons list">
                 <li>
                   <a class="social-network-icon" href="">
@@ -262,11 +262,11 @@
               </ul>
             </div>
           </li>
-          <li class="card">
+          <li class="team__list-card">
             <img src="./image/team/img(1).jpg" alt="photo" width="270" />
-            <div class="team-card">
-              <h3 class="team-member">Olga Repina</h3>
-              <p class="team-position">Frontend Developer</p>
+            <div class="team__list-member">
+              <h3 class="team__list-title">Olga Repina</h3>
+              <p class="team__list-position">Frontend Developer</p>
               <ul class="social-network-icons list">
                 <li>
                   <a class="social-network-icon" href="">
@@ -297,11 +297,11 @@
               </ul>
             </div>
           </li>
-          <li class="card">
+          <li class="team__list-card">
             <img src="./image/team/img(2).jpg" alt="photo" width="270" />
-            <div class="team-card">
-              <h3 class="team-member">Mykola Tarasov</h3>
-              <p class="team-position">Marketing</p>
+            <div class="team__list-member">
+              <h3 class="team__list-title">Mykola Tarasov</h3>
+              <p class="team__list-position">Marketing</p>
               <ul class="social-network-icons list">
                 <li>
                   <a class="social-network-icon" href="">
@@ -332,11 +332,11 @@
               </ul>
             </div>
           </li>
-          <li class="card">
+          <li class="team__list-card">
             <img src="./image/team/img(3).jpg" alt="photo" width="270" />
-            <div class="team-card">
-              <h3 class="team-member">Mikhail Ermakov</h3>
-              <p class="team-position">UI Designer</p>
+            <div class="team__list-member">
+              <h3 class="team__list-title">Mikhail Ermakov</h3>
+              <p class="team__list-position">UI Designer</p>
               <ul class="social-network-icons list">
                 <li>
                   <a class="social-network-icon" href="">
@@ -379,48 +379,48 @@
         <h2 class="section-title">Regular Customers</h2>
         <ul class="customers-list list">
           <li>
-            <a class="customer-card" href="">
-              <svg class="customers-icon" width="106px" height="60px">
+            <a class="customers-list__card" href="">
+              <svg class="customers-list__icon" width="106px" height="60px">
                 <use href="./image/icons.svg#company1">
                 </use>
               </svg>
             </a>
           </li>
           <li>
-            <a class="customer-card" href="">
-              <svg class="customers-icon" width="106px" height="60px">
+            <a class="customers-list__card" href="">
+              <svg class="customers-list__icon" width="106px" height="60px">
                 <use href="./image/icons.svg#company2">
                 </use>
               </svg>
             </a>
           </li>
           <li>
-            <a class="customer-card" href="">
-              <svg class="customers-icon" width="106px" height="60px">
+            <a class="customers-list__card" href="">
+              <svg class="customers-list__icon" width="106px" height="60px">
                 <use href="./image/icons.svg#company3">
                 </use>
               </svg>
             </a>
           </li>
           <li>
-            <a class="customer-card" href="">
-              <svg class="customers-icon" width="106px" height="60px">
+            <a class="customers-list__card" href="">
+              <svg class="customers-list__icon" width="106px" height="60px">
                 <use href="./image/icons.svg#company4">
                 </use>
               </svg>
             </a>
           </li>
           <li>
-            <a class="customer-card" href="">
-              <svg class="customers-icon" width="106px" height="60px">
+            <a class="customers-list__card" href="">
+              <svg class="customers-list__icon" width="106px" height="60px">
                 <use href="./image/icons.svg#company5">
                 </use>
               </svg>
             </a>
           </li>
           <li>
-            <a class="customer-card" href="">
-              <svg class="customers-icon" width="106px" height="60px">
+            <a class="customers-list__card" href="">
+              <svg class="customers-list__icon" width="106px" height="60px">
                 <use href="./image/icons.svg#company6">
                 </use>
               </svg>

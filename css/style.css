@@ -41,36 +41,6 @@ body {
   text-decoration: none;
 }
 
-.current:active,
-.current:visited {
-  color: var(--accent-color);
-}
-
-.current {
-  position: relative;
-}
-
-.current::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 10px;
-
-  background-color: var(--accent-color);
-}
-
-.item-header {
-  border-bottom: 1px solid var(--border-color);
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .container {
   width: 1200px;
 
@@ -78,54 +48,19 @@ body {
   padding: 0 15px;
 }
 
-.wrapper {
+.wrapper-flex {
   display: flex;
 }
 
-/* header */
-
-.wrapper-nav {
-  display: flex;
-  align-self: center;
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.wrapper-nav li:not(:last-child) {
-  margin-right: 50px;
-}
+/* header \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
-.wrapper-contacts {
-  display: flex;
-  align-self: center;
-  margin-left: auto;
-}
-
-.contacts-links {
-  display: flex;
-  align-items: center;
-}
-
-.header-mail {
-  margin-right: 10px;
-
-  fill: currentColor;
-  cursor: pointer;
-}
-
-.header-tel {
-  margin-right: 10px;
-  cursor: pointer;
-
-  fill: currentColor;
-}
-.header-mail:hover,
-.header-tel:hover,
-.header-mail:focus,
-.header-tel:focus {
-  fill: currentColor;
-}
-
-.wrapper-contacts li:not(:last-child) {
-  margin-right: 50px;
+.item-header {
+  border-bottom: 1px solid var(--border-color);
 }
 
 .logo-header {
@@ -141,6 +76,31 @@ body {
   line-height: 1.19;
 
   color: var(--primary-text-color);
+}
+
+.accent-color {
+  color: var(--accent-color);
+}
+
+.current {
+  position: relative;
+}
+
+.current:active,
+.current:visited {
+  color: var(--accent-color);
+}
+
+.current::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+
+  background-color: var(--accent-color);
 }
 
 .navigation {
@@ -163,7 +123,29 @@ body {
   color: var(--accent-color);
 }
 
-.reference {
+.main-nav__list {
+  display: flex;
+  align-self: center;
+}
+
+.main-nav__list li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts-list {
+  display: flex;
+  align-self: center;
+  margin-left: auto;
+}
+
+.contacts-list li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contacts-links {
+  display: flex;
+  align-items: center;
+
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -178,16 +160,24 @@ body {
   transition: color var(--fast-transition);
 }
 
-.reference:hover,
-.reference:focus {
+.contacts-links:hover,
+.contacts-links:focus {
   color: var(--accent-color);
 }
 
-.accent-color {
-  color: var(--accent-color);
+.contact-icon {
+  margin-right: 10px;
+
+  fill: currentColor;
+  cursor: pointer;
 }
 
-/* hero */
+.header-icon:hover,
+.header-icon:focus {
+  fill: currentColor;
+}
+
+/* hero \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 .hero {
   width: 1600px;
@@ -596,21 +586,21 @@ textarea[placeholder='Enter text'] {
   padding-top: 0;
 }
 
-.study {
+.craft-list__work {
   position: relative;
 
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
 }
 
-.study:nth-child(3n) {
+.craft-list__work:nth-child(3n) {
   margin-right: 0;
 }
 
-/* .trade-image {
+/* .craft-list__image {
 } */
 
-.trade-list {
+.craft-list__title {
   position: absolute;
   bottom: 1%;
 
@@ -634,7 +624,7 @@ textarea[placeholder='Enter text'] {
 .team {
   background-color: var(--secondary-bg-color);
 }
-.team-member {
+.team__list-title {
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -642,7 +632,7 @@ textarea[placeholder='Enter text'] {
   line-height: 1.19;
 }
 
-.team-position {
+.team__list-position {
   margin-bottom: 16px;
 
   font-weight: 400;
@@ -652,7 +642,7 @@ textarea[placeholder='Enter text'] {
   color: var(--secondary-text-color);
 }
 
-.card {
+.team__list-card {
   text-align: center;
 
   width: calc((100% - 90px) / 4);
@@ -668,7 +658,7 @@ textarea[placeholder='Enter text'] {
   margin-right: 0;
 }
 
-.team-card {
+.team__list-member {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -718,7 +708,7 @@ textarea[placeholder='Enter text'] {
   gap: 30px;
 }
 
-.customer-card {
+.customers-list__card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -733,19 +723,19 @@ textarea[placeholder='Enter text'] {
   transition: border var(--fast-transition);
 }
 
-.customers-icon {
+.customers-list__icon {
   fill: var(--secondary-border-color);
 
   transition: fill var(--fast-transition);
 }
 
-.customer-card:hover,
-.customer-card:focus {
+.customers-list__card:hover,
+.customers-list__card:focus {
   border: 1px solid var(--accent-color);
 }
 
-.customer-card:hover .customers-icon,
-.customer-card:focus .customers-icon {
+.customers-list__card:hover .customers-list__icon,
+.customers-list__card:focus .customers-list__icon {
   fill: var(--accent-color);
 }
 
