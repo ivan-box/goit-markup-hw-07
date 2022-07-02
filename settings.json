@@ -1,4 +1,4 @@
-"editor.tokenColorCustomizations": {
+"editor.tokenColorCustomizations" {
     "textMateRules": [
       {
         "scope": ["comment"],
