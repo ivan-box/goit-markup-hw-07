@@ -18,20 +18,20 @@
   cursor: pointer;
 
   transition: border var(--fast-transition);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
 }
 
 .customers-list__icon {
   fill: var(--secondary-border-color);
 
   transition: fill var(--fast-transition);
-}
 
-.customers-list__card:hover,
-.customers-list__card:focus {
-  border: 1px solid var(--accent-color);
-}
-
-.customers-list__card:hover .customers-list__icon,
-.customers-list__card:focus .customers-list__icon {
-  fill: var(--accent-color);
+  .customers-list__card:hover &,
+  .customers-list__card:focus & {
+    fill: var(--accent-color);
+  }
 }

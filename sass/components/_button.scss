@@ -36,10 +36,10 @@
 
 .btn-close-icon {
   transition: fill var(--fast-transition);
-}
 
-.hero-button-close:hover .btn-close-icon {
-  fill: var(--accent-color);
+  .hero-button-close:hover & {
+    fill: var(--accent-color);
+  }
 }
 
 .modal-send-btn {
@@ -72,7 +72,6 @@
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  cursor: pointer;
 
   color: var(--accent-text-color);
   background-color: var(--accent-color);

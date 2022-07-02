@@ -200,7 +200,6 @@ ul {
   -webkit-transition: fill var(--fast-transition);
   transition: fill var(--fast-transition);
 }
-
 .hero-button-close:hover .btn-close-icon {
   fill: var(--accent-color);
 }
@@ -232,7 +231,6 @@ ul {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  cursor: pointer;
   color: var(--accent-text-color);
   background-color: var(--accent-color);
   border: 1px solid transparent;
@@ -266,15 +264,8 @@ ul {
   -webkit-transition: background-color var(--fast-transition);
   transition: background-color var(--fast-transition);
 }
-
-.social-network-icon:hover,
-.social-network-icon:focus {
+.social-network-icon:hover, .social-network-icon:focus {
   background-color: var(--accent-color);
-  fill: var(--accent-text-color);
-}
-
-.social-network-icon:hover .social-icon,
-.social-network-icon:focus .social-icon {
   fill: var(--accent-text-color);
 }
 
@@ -282,6 +273,9 @@ ul {
   fill: var(--secondary-border-color);
   -webkit-transition: fill var(--fast-transition);
   transition: fill var(--fast-transition);
+}
+.social-network-icon:hover .social-icon, .social-network-icon:focus .social-icon {
+  fill: var(--accent-text-color);
 }
 
 .social-footer-icons {
@@ -302,9 +296,7 @@ ul {
   -webkit-transition: background-color var(--fast-transition);
   transition: background-color var(--fast-transition);
 }
-
-.social-footer-icons:hover,
-.social-footer-icons:focus {
+.social-footer-icons:hover, .social-footer-icons:focus {
   background-color: var(--accent-color);
 }
 
@@ -324,9 +316,7 @@ ul {
   -webkit-transition: color var(--fast-transition);
   transition: color var(--fast-transition);
 }
-
-.main-nav__link:hover,
-.main-nav__link:focus {
+.main-nav__link:hover, .main-nav__link:focus {
   color: var(--accent-color);
 }
 
@@ -485,33 +475,21 @@ textarea[placeholder="Enter text"] {
   -webkit-transition: border var(--fast-transition);
   transition: border var(--fast-transition);
 }
-
-.user-input:hover,
-.user-input:focus,
-.user-input:checked {
+.user-input:hover, .user-input:focus, .user-input:checked {
   border: 1px solid var(--accent-color);
 }
-
-input[placeholder="Enter text"] {
-  padding-left: 42px;
-}
-
 .user-input::-webkit-input-placeholder {
   opacity: 0;
 }
-
 .user-input::-moz-placeholder {
   opacity: 0;
 }
-
 .user-input:-ms-input-placeholder {
   opacity: 0;
 }
-
 .user-input::-ms-input-placeholder {
   opacity: 0;
 }
-
 .user-input::placeholder {
   opacity: 0;
 }
@@ -541,30 +519,44 @@ input[placeholder="Enter text"] {
   -webkit-transition: border var(--fast-transition);
   transition: border var(--fast-transition);
 }
-
-.user-input-textarea:hover,
-.user-input-textarea:focus {
+.user-input-textarea:hover, .user-input-textarea:focus {
   border: 1px solid var(--accent-color);
 }
-
 .user-input-textarea::-webkit-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
 .user-input-textarea::-moz-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
 .user-input-textarea:-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
 .user-input-textarea::-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
 .user-input-textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
+}
+
+input[placeholder="Enter text"] {
+  padding-left: 42px;
+}
+
+.mailing-input {
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+}
+
+input[placeholder=E-mail] {
+  padding: 15px;
+  color: var(--accent-text-color);
+  cursor: pointer;
 }
 
 .modal-icon-input {
@@ -574,9 +566,7 @@ input[placeholder="Enter text"] {
   -webkit-transition: fill var(--fast-transition);
   transition: fill var(--fast-transition);
 }
-
-.user-input:hover + .modal-icon-input,
-.user-input:focus + .modal-icon-input {
+.user-input:hover + .modal-icon-input, .user-input:focus + .modal-icon-input {
   fill: var(--accent-color);
 }
 
@@ -597,7 +587,6 @@ input[placeholder="Enter text"] {
   -webkit-transition: border-color var(--fast-transition), background-color var(--fast-transition);
   transition: border-color var(--fast-transition), background-color var(--fast-transition);
 }
-
 .user-input-checkbox:checked + .modal-icon-checkbox {
   border-color: transparent;
   background-color: var(--accent-color);
@@ -607,10 +596,9 @@ input[placeholder="Enter text"] {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   fill: transparent;
-  -webkit-transition: background-color var(--fast-transition), fill var(--fast-transition);
-  transition: background-color var(--fast-transition), fill var(--fast-transition);
+  -webkit-transition: fill var(--fast-transition);
+  transition: fill var(--fast-transition);
 }
-
 .user-input-checkbox:checked + .modal-icon-checkbox > .modal-icon-check {
   fill: var(--accent-text-color);
 }
@@ -631,11 +619,6 @@ input[placeholder="Enter text"] {
   color: var(--primary-text-color);
 }
 
-.header-icon:hover,
-.header-icon:focus {
-  fill: currentColor;
-}
-
 .accent-color {
   color: var(--accent-color);
 }
@@ -643,12 +626,9 @@ input[placeholder="Enter text"] {
 .current {
   position: relative;
 }
-
-.current:active,
-.current:visited {
+.current:active, .current:visited {
   color: var(--accent-color);
 }
-
 .current::after {
   content: "";
   position: absolute;
@@ -691,9 +671,7 @@ input[placeholder="Enter text"] {
   -webkit-transition: color var(--fast-transition);
   transition: color var(--fast-transition);
 }
-
-.contacts-links:hover,
-.contacts-links:focus {
+.contacts-links:hover, .contacts-links:focus {
   color: var(--accent-color);
 }
 
@@ -845,20 +823,16 @@ input[placeholder="Enter text"] {
   -webkit-transition: border var(--fast-transition);
   transition: border var(--fast-transition);
 }
+.customers-list__card:hover, .customers-list__card:focus {
+  border: 1px solid var(--accent-color);
+}
 
 .customers-list__icon {
   fill: var(--secondary-border-color);
   -webkit-transition: fill var(--fast-transition);
   transition: fill var(--fast-transition);
 }
-
-.customers-list__card:hover,
-.customers-list__card:focus {
-  border: 1px solid var(--accent-color);
-}
-
-.customers-list__card:hover .customers-list__icon,
-.customers-list__card:focus .customers-list__icon {
+.customers-list__card:hover .customers-list__icon, .customers-list__card:focus .customers-list__icon {
   fill: var(--accent-color);
 }
 
@@ -960,23 +934,6 @@ input[placeholder="Enter text"] {
   margin-right: 10px;
 }
 
-.mailing-input {
-  width: 358px;
-  height: 50px;
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  outline: none;
-}
-
-input[placeholder=E-mail] {
-  padding: 15px;
-  color: var(--accent-text-color);
-  cursor: pointer;
-}
-
 .examples-works {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1008,15 +965,12 @@ input[placeholder=E-mail] {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
-  cursor: pointer;
   -webkit-transition: color var(--fast-transition), background-color var(--fast-transition), -webkit-box-shadow var(--fast-transition);
   transition: color var(--fast-transition), background-color var(--fast-transition), -webkit-box-shadow var(--fast-transition);
   transition: color var(--fast-transition), background-color var(--fast-transition), box-shadow var(--fast-transition);
   transition: color var(--fast-transition), background-color var(--fast-transition), box-shadow var(--fast-transition), -webkit-box-shadow var(--fast-transition);
 }
-
-.buttons:hover,
-.buttons:focus {
+.buttons:hover, .buttons:focus {
   color: var(--accent-text-color);
   background-color: var(--accent-color);
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1040,10 +994,6 @@ input[placeholder=E-mail] {
   overflow: hidden;
 }
 
-.card-portfolio-img img {
-  display: block;
-}
-
 .card-portfolio-list {
   display: block;
   -webkit-transition: -webkit-box-shadow var(--fast-transition);
@@ -1051,9 +1001,7 @@ input[placeholder=E-mail] {
   transition: box-shadow var(--fast-transition);
   transition: box-shadow var(--fast-transition), -webkit-box-shadow var(--fast-transition);
 }
-
-.card-portfolio-list:hover,
-.card-portfolio-list:focus {
+.card-portfolio-list:hover, .card-portfolio-list:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -1074,16 +1022,15 @@ input[placeholder=E-mail] {
   -webkit-transition: var(--fast-transition);
   transition: var(--fast-transition);
 }
-
-.example-text p {
-  text-align: left;
-}
-
 .card-portfolio:hover .example-text {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   -webkit-transition: var(--fast-transition);
   transition: var(--fast-transition);
+}
+
+.example-text p {
+  text-align: left;
 }
 
 .examples-buttons {

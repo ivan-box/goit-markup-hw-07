@@ -9,20 +9,16 @@
   outline: none;
 
   transition: border var(--fast-transition);
-}
 
-.user-input:hover,
-.user-input:focus,
-.user-input:checked {
-  border: 1px solid var(--accent-color);
-}
+  &:hover,
+  &:focus,
+  &:checked {
+    border: 1px solid var(--accent-color);
+  }
 
-input[placeholder='Enter text'] {
-  padding-left: 42px;
-}
-
-.user-input::placeholder {
-  opacity: 0;
+  &::placeholder {
+    opacity: 0;
+  }
 }
 
 .user-input-checkbox.visually-hidden {
@@ -51,13 +47,35 @@ input[placeholder='Enter text'] {
   resize: none;
 
   transition: border var(--fast-transition);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
+
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
-.user-input-textarea:hover,
-.user-input-textarea:focus {
-  border: 1px solid var(--accent-color);
+input[placeholder='Enter text'] {
+  padding-left: 42px;
 }
 
-.user-input-textarea::placeholder {
-  color: rgba(117, 117, 117, 0.5);
+.mailing-input {
+  width: 358px;
+  height: 50px;
+
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+}
+
+input[placeholder='E-mail'] {
+  padding: 15px;
+  color: var(--accent-text-color);
+
+  cursor: pointer;
 }

@@ -26,18 +26,16 @@
   font-size: 16px;
   line-height: 1.63;
 
-  cursor: pointer;
-
   transition: color var(--fast-transition), background-color var(--fast-transition),
     box-shadow var(--fast-transition);
-}
 
-.buttons:hover,
-.buttons:focus {
-  color: var(--accent-text-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .example-work {
@@ -58,19 +56,16 @@
   overflow: hidden;
 }
 
-.card-portfolio-img img {
-  display: block;
-}
-
 .card-portfolio-list {
   display: block;
-  transition: box-shadow var(--fast-transition);
-}
 
-.card-portfolio-list:hover,
-.card-portfolio-list:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: box-shadow var(--fast-transition);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .example-text {
@@ -89,15 +84,15 @@
 
   transform: translateY(0);
   transition: var(--fast-transition);
+
+  .card-portfolio:hover & {
+    transform: translateY(-100%);
+    transition: var(--fast-transition);
+  }
 }
 
 .example-text p {
   text-align: left;
-}
-
-.card-portfolio:hover .example-text {
-  transform: translateY(-100%);
-  transition: var(--fast-transition);
 }
 
 .examples-buttons {
